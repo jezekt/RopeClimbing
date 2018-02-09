@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/JezekT.RopeClimbing.Domain/bin/Debug/netstandard2.0
+/JezekT.RopeClimbing.Domain/obj
+/JezekT.RopeClimbing.Server.Api/bin/Debug/netcoreapp2.0
+/JezekT.RopeClimbing.Server.Api/obj
+/JezekT.RopeClimbing.Server.Migrations.ConsoleApp/bin/Debug/netcoreapp2.0
+/JezekT.RopeClimbing.Server.Migrations.ConsoleApp/obj
+/JezekT.RopeClimbing.Server.Services/bin/Debug/netcoreapp2.0
+/JezekT.RopeClimbing.Server.Services/obj
