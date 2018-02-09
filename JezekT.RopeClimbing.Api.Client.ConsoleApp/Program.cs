@@ -1,30 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Threading.Tasks;
 using JezekT.RopeClimbing.Domain.Entities;
-using Newtonsoft.Json;
 
 namespace JezekT.RopeClimbing.Api.Client.ConsoleApp
 {
-    class Program
+    public class Program
     {
-        static async Task Main(string[] args)
+        static async Task Main()
         {
-            var httpClient = new RopeClimbingHttpClient("", "", "", "", new ConsoleLogger());
+            var client = new RopeClimbingClient(new RopeClimbingHttpClient("", "", "", "", new ConsoleLogger()));
             while (true)
             {
                 var attempt = GetTestAttemptFromUser();
-                var postResponse = await httpClient.PostAsync("api/testattempts/createattempt", attempt);
-                if (postResponse != null)
+                if (await client.AddTestAttempt(attempt))
                 {
-                    var attemptsResponse = await httpClient.GetResponseAsync("api/testattempts/last100attempts");
-                    if (attemptsResponse != null)
+                    var attempts = await client.GetLast100TestAttempts();
+                    foreach (var testAttempt in attempts)
                     {
-                        var attempts = GetTestAttemptsFromResponse(attemptsResponse);
-                        foreach (var testAttempt in attempts)
-                        {
-                            Console.WriteLine($"Id={testAttempt.Id};RacerName={testAttempt.RacerName};Time={testAttempt.TimeInMiliseconds / 1000}s;TimeStamp={testAttempt.AttemptEndTime}");
-                        }
+                        Console.WriteLine($"Id={testAttempt.Id};RacerName={testAttempt.RacerName};Time={(decimal)testAttempt.TimeInMiliseconds / 1000}s;TimeStamp={testAttempt.AttemptEndTime}");
                     }
                 }
             }
@@ -72,16 +65,5 @@ namespace JezekT.RopeClimbing.Api.Client.ConsoleApp
             }
         }
 
-        private static List<TestAttempt> GetTestAttemptsFromResponse(string response)
-        {
-            try
-            {
-                return JsonConvert.DeserializeObject<List<TestAttempt>>(response);
-            }
-            catch (Exception)
-            {
-                return null;
-            }
-        }
     }
 }

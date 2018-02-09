@@ -8,7 +8,7 @@ using IdentityModel.Client;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 
-namespace JezekT.RopeClimbing.Api.Client.ConsoleApp
+namespace JezekT.RopeClimbing.Api.Client
 {
     public class RopeClimbingHttpClient
     {
@@ -171,5 +171,6 @@ namespace JezekT.RopeClimbing.Api.Client.ConsoleApp
             }
             return false;
         }
+
     }
 }
