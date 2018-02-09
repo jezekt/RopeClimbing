@@ -33,7 +33,7 @@ namespace JezekT.RopeClimbing.Server.Services.TestAttempts
             }
         }
 
-        public async Task<List<TestAttempt>> GetAttemptsAsync()
+        public async Task<List<TestAttempt>> GetLast100AttemptsAsync()
         {
             return await _dbContext.TestAttemptSet.OrderByDescending(x => x.Id).Take(100).ToListAsync();
         }

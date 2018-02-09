@@ -1,6 +1,7 @@
 ﻿using System.IdentityModel.Tokens.Jwt;
 using IdentityServer4.AccessTokenValidation;
 using JezekT.RopeClimbing.Server.Services.Data;
+using JezekT.RopeClimbing.Server.Services.TestAttempts;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -19,6 +20,7 @@ namespace JezekT.RopeClimbing.Server.Api
         {
             services.AddMvc();
 
+            services.AddTransient<TestAttemptServices>();
             services.AddDbContext<RopeClimbingDbContext>(options => options.UseSqlServer(_configuration.GetConnectionString("DefaultConnection")));
             services.AddAuthentication(IdentityServerAuthenticationDefaults.AuthenticationScheme)
                 .AddIdentityServerAuthentication(options =>

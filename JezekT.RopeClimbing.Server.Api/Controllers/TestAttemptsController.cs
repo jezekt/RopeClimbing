@@ -23,9 +23,9 @@ namespace JezekT.RopeClimbing.Server.Api.Controllers
         {
             if (obj != null)
             {
-                var racerName = obj["racerName"].ToObject<string>();
-                var timeInMiliseconds = obj["timeInMiliseconds"].ToObject<int>();
-                var attemptEndTime = obj["attemptEndTime"].ToObject<DateTime>();
+                var racerName = obj["RacerName"].ToObject<string>();
+                var timeInMiliseconds = obj["TimeInMiliseconds"].ToObject<int>();
+                var attemptEndTime = obj["AttemptEndTime"].ToObject<DateTime>();
 
                 if (racerName != null && attemptEndTime != default(DateTime))
                 {
@@ -42,9 +42,9 @@ namespace JezekT.RopeClimbing.Server.Api.Controllers
         }
 
         [HttpGet]
-        public async Task<List<TestAttempt>> GetAttempts()
+        public async Task<List<TestAttempt>> Last100Attempts()
         {
-            return await _attemptServices.GetAttemptsAsync();
+            return await _attemptServices.GetLast100AttemptsAsync();
         }
 
 

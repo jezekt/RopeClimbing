@@ -5,11 +5,13 @@ VisualStudioVersion = 15.0.27130.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JezekT.RopeClimbing.Server.Api", "JezekT.RopeClimbing.Server.Api\JezekT.RopeClimbing.Server.Api.csproj", "{60D92F8E-ED74-4399-97A6-1BF383671983}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JezekT.RopeClimbing.Domain", "JezekT.RopeClimbing.Domain\JezekT.RopeClimbing.Domain.csproj", "{6029FF54-E907-48FD-A8CE-C7FBC14CC19F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JezekT.RopeClimbing.Domain", "JezekT.RopeClimbing.Domain\JezekT.RopeClimbing.Domain.csproj", "{6029FF54-E907-48FD-A8CE-C7FBC14CC19F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JezekT.RopeClimbing.Server.Services", "JezekT.RopeClimbing.Server.Services\JezekT.RopeClimbing.Server.Services.csproj", "{C698F184-3D13-4EF6-9856-53D6AF9098AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JezekT.RopeClimbing.Server.Services", "JezekT.RopeClimbing.Server.Services\JezekT.RopeClimbing.Server.Services.csproj", "{C698F184-3D13-4EF6-9856-53D6AF9098AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JezekT.RopeClimbing.Server.Migrations.ConsoleApp", "JezekT.RopeClimbing.Server.Migrations.ConsoleApp\JezekT.RopeClimbing.Server.Migrations.ConsoleApp.csproj", "{78818031-C142-4A41-BAFF-A10AE2A554B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JezekT.RopeClimbing.Server.Migrations.ConsoleApp", "JezekT.RopeClimbing.Server.Migrations.ConsoleApp\JezekT.RopeClimbing.Server.Migrations.ConsoleApp.csproj", "{78818031-C142-4A41-BAFF-A10AE2A554B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JezekT.RopeClimbing.Api.Client.ConsoleApp", "JezekT.RopeClimbing.Api.Client.ConsoleApp\JezekT.RopeClimbing.Api.Client.ConsoleApp.csproj", "{9B6073DF-E728-400B-B4B4-3E1FD5240158}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{78818031-C142-4A41-BAFF-A10AE2A554B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78818031-C142-4A41-BAFF-A10AE2A554B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78818031-C142-4A41-BAFF-A10AE2A554B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B6073DF-E728-400B-B4B4-3E1FD5240158}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B6073DF-E728-400B-B4B4-3E1FD5240158}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B6073DF-E728-400B-B4B4-3E1FD5240158}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B6073DF-E728-400B-B4B4-3E1FD5240158}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
