@@ -7,6 +7,8 @@
     <Description>RopeClimbing API client</Description>
     <RepositoryUrl>https://github.com/jezekt/RopeClimbing</RepositoryUrl>
     <PackageTags>ropeclimbing</PackageTags>
+    <PackageLicenseUrl>https://github.com/jezekt/RopeClimbing/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/jezekt/RopeClimbing/tree/master/JezekT.RopeClimbing.Api.Client</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
