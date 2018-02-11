@@ -22,3 +22,6 @@
 /JezekT.RopeClimbing.Api.Client/bin/Debug/netstandard2.0
 /JezekT.RopeClimbing.Api.Client/obj/Debug/netstandard2.0
 /JezekT.RopeClimbing.Api.Client/obj
+/JezekT.RopeClimbing.Api.Client/bin/Release
+/JezekT.RopeClimbing.Domain/bin/Release
+/JezekT.RopeClimbing.Api.Client.ConsoleApp/httpClientConfig.json
