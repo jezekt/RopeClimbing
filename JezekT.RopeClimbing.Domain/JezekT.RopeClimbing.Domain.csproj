@@ -2,6 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Tomas Jezek</Authors>
+    <Company>JezekT</Company>
+    <Description>RopeClimbing domain files (Entities and common classes)</Description>
+    <PackageLicenseUrl>https://github.com/jezekt/RopeClimbing/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/jezekt/RopeClimbing/tree/master/JezekT.RopeClimbing.Domain</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/jezekt/RopeClimbing</RepositoryUrl>
+    <PackageTags>ropeclimbing</PackageTags>
   </PropertyGroup>
 
 </Project>

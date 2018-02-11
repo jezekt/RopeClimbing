@@ -8,7 +8,8 @@ namespace JezekT.RopeClimbing.Api.Client.ConsoleApp
     {
         static async Task Main()
         {
-            var client = new RopeClimbingClient(new RopeClimbingHttpClient("", "", "", "", new ConsoleLogger()));
+            var factory = new RopeClimbingClientFactory();
+            var client = factory.Create();
             while (true)
             {
                 var attempt = GetTestAttemptFromUser();
